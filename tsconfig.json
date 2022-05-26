@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es2018"],
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "typeRoots": ["node_modules/@types", "types"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

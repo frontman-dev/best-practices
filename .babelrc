@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "IE 11, > 0.1%",
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
