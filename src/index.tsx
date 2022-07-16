@@ -1,5 +1,7 @@
 import React from "react"
-import reactDom from "react-dom"
+import { createRoot } from "react-dom/client"
 import { Root } from "./root"
 
-reactDom.render(<Root />, document.getElementById("root"))
+const container = document.getElementById("root")
+const root = createRoot(container!)
+root.render(<Root />)

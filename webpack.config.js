@@ -12,14 +12,13 @@ const output = {
 const rules = [
   {
     test: /\.ts(x?)$/,
+    exclude: /node_modules/,
     use: [
       {
-        loader: "awesome-typescript-loader",
-        options: {
-          useBabel: true,
-          babelCore: "@babel/core",
-          useCache: mode === "production",
-        },
+        loader: "babel-loader",
+      },
+      {
+        loader: "ts-loader",
       },
     ],
   },
