@@ -1,0 +1,7 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+  border-right: 1px solid black;
+}

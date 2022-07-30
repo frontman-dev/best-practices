@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khinartur/skills.git"
+    "url": "git+https://github.com/frontman-dev/best-practices.git"
   },
   "keywords": [
     "frontend"
@@ -24,7 +24,8 @@
   "dependencies": {
     "core-js": "^3.22.7",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-highlight": "^0.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -37,6 +38,7 @@
     "@storybook/react": "^6.5.9",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "@types/react-highlight": "^0.12.5",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
