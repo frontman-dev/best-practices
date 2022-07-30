@@ -4,4 +4,4 @@ import { NavLink } from "./navlink"
 
 const stories = storiesOf("NavLink", module)
 
-stories.add("NavLink", () => <NavLink children="Markup" />)
+stories.add("NavLink", () => <NavLink to="" children="Markup" />)

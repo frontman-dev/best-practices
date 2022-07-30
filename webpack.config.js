@@ -106,5 +106,6 @@ module.exports = {
     port: 2022,
     hot: false,
     liveReload: true,
+    historyApiFallback: true,
   },
 }
