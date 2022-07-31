@@ -4,4 +4,6 @@ import { Card } from "./card"
 
 const stories = storiesOf("Card", module)
 
-stories.add("Card", () => <Card>Card</Card>)
+const EMPTY = ""
+
+stories.add("Card", () => <Card to={EMPTY}>Card</Card>)

@@ -5,4 +5,9 @@
   border: 1px solid black;
   border-radius: 12px;
   height: 200px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 10px 10px rgba(27, 32, 50, 0.12);
 }

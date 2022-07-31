@@ -1,0 +1,9 @@
+.gradient {
+  /* main */
+  background: linear-gradient(90deg, #2cc0e6 0%, #2cd0c2 50%, #e8edd7 100%);
+
+  /* view */
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+}
