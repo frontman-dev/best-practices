@@ -5,3 +5,8 @@ declare module '*.css' {
   const classes: IClasses;
   export = classes;
 }
+
+declare module '*.svg' {
+  const image: string;
+  export default image;
+}

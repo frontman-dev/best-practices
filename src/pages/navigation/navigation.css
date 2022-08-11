@@ -5,3 +5,9 @@
   padding: 40px;
   border-right: 1px solid black;
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}

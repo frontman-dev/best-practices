@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useCallback, useState } from "react"
 import styles from "./root.css"
 import { Header } from "./header/header"
 import { Navigation } from "./navigation/navigation"
@@ -8,11 +8,16 @@ import { Routes } from "~/core/routes"
 import { ReactPage } from "./react/react"
 import { GradientPage } from "./gradient/page"
 import { GradientTextPage } from "./gradient-text/page"
+import { SideMenu } from "~/components/sidemenu/sidemenu"
+import { Menu } from "./menu/menu"
 
 export function Root() {
+  const [showMenu, setShowMenu] = useState(false)
+  const onMenuTrigger = useCallback(() => setShowMenu(shown => !shown), [setShowMenu])
+
   return (
     <div className={styles.root}>
-      <Header />
+      <Header onMenuClick={onMenuTrigger} />
       <div className={styles.container}>
         <Navigation />
         <div className={styles.page}>
@@ -25,6 +30,9 @@ export function Root() {
           </RouterRoutes>
         </div>
       </div>
+      <SideMenu show={showMenu} onClose={onMenuTrigger}>
+        <Menu />
+      </SideMenu>
     </div>
   )
 }

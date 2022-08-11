@@ -4,4 +4,4 @@ import { GradientText } from "./gradient-text"
 
 const stories = storiesOf("css/gradient", module)
 
-stories.add("GradientText", () => <GradientText text="GRADIENT" />)
+stories.add("GradientText", () => <GradientText />)

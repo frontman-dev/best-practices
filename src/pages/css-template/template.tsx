@@ -9,6 +9,7 @@ export type CssPageProps = {
   block: React.ReactNode
 }
 
+// @todo: add Next and Previous buttons
 export function CssPage({ title, description, code, block }: CssPageProps) {
   return (
     <div className={styles.container}>

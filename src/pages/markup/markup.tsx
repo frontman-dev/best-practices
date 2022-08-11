@@ -7,10 +7,10 @@ import styles from "./markup.css"
 export function MarkupPage() {
   return (
     <div className={styles.container}>
-      <Grid>
+      <div className={styles.wrapper}>
         <Card to={Routes.Gradient}>Gradient</Card>
         <Card to={Routes.GradientText}>Gradient text</Card>
-      </Grid>
+      </div>
     </div>
   )
 }
