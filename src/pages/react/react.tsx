@@ -1,15 +1,15 @@
 import React from "react"
 import { Card } from "~/components/card/card"
-import { Grid } from "~/components/grid/grid"
+import { Cards } from "~/components/cards/cards"
 import { Routes } from "~/core/routes"
 import styles from "./react.css"
 
 export function ReactPage() {
   return (
     <div className={styles.container}>
-      <Grid>
+      <Cards>
         <Card to={Routes.TenHocs}>10 good HOCS</Card>
-      </Grid>
+      </Cards>
     </div>
   )
 }
