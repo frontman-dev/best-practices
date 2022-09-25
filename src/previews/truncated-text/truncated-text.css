@@ -1,0 +1,10 @@
+.text {
+  /* main */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* view */
+  font-size: 24px;
+  width: 120px;
+}
