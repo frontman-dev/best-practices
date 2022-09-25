@@ -15,7 +15,9 @@ export function CssPage({ title, description, code, block }: CssPageProps) {
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
       {description && <div className={styles.description}></div>}
-      <Code>{code}</Code>
+      <div className={styles.code}>
+        <Code>{code}</Code>
+      </div>
       <div className={styles.block}>{block}</div>
     </div>
   )

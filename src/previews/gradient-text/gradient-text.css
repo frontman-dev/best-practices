@@ -1,0 +1,11 @@
+.text {
+  /* main */
+  background: linear-gradient(90deg, #df6363, #ffb88c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* view */
+  font-size: 24px;
+  font-weight: 900;
+}

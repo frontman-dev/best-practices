@@ -9,9 +9,9 @@ const EMPTY = ""
 
 stories.add("Grid", () => (
   <Grid>
-    <Card to={EMPTY} children={"Card"} />
-    <Card to={EMPTY} children={"Card"} />
-    <Card to={EMPTY} children={"Card"} />
-    <Card to={EMPTY} children={"Card"} />
+    <Card to={EMPTY} result={<></>} caption={"Card"} />
+    <Card to={EMPTY} result={<></>} caption={"Card"} />
+    <Card to={EMPTY} result={<></>} caption={"Card"} />
+    <Card to={EMPTY} result={<></>} caption={"Card"} />
   </Grid>
 ))

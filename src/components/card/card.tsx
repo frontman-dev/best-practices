@@ -3,16 +3,18 @@ import { LinkProps, useNavigate } from "react-router-dom"
 import styles from "./card.css"
 
 export type CardProps = Pick<LinkProps, "to"> & {
-  children: React.ReactNode
+  result: React.ReactNode
+  caption: string
 }
 
-export function Card({ to, children }: CardProps) {
+export function Card({ to, result, caption }: CardProps) {
   const navigate = useNavigate()
   const onClick = useCallback(() => navigate(to), [navigate])
 
   return (
-    <div onClick={onClick} className={styles.card}>
-      {children}
+    <div className={styles.card} onClick={onClick}>
+      {result && <div className={styles.result}>{result}</div>}
+      <div className={styles.caption}>{caption}</div>
     </div>
   )
 }

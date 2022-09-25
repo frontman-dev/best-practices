@@ -6,4 +6,4 @@ const stories = storiesOf("Card", module)
 
 const EMPTY = ""
 
-stories.add("Card", () => <Card to={EMPTY}>Card</Card>)
+stories.add("Card", () => <Card to={EMPTY} result={<></>} caption="Card" />)

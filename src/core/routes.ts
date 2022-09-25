@@ -3,10 +3,10 @@ export enum Routes {
   Markup = "/css",
   React = "/react",
 
-  // css
+  // markup
   Gradient = "/css/gradient",
   GradientText = "/css/gradient-text",
 
   // react
-  TenHocs = "/css/10-hocs",
+  TenHocs = "/react/10-hocs",
 }

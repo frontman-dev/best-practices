@@ -1,3 +1,33 @@
 .link {
-  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(27, 26, 32, 0.5);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.section-active {
+  color: #1b1a20;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.page:hover,
+.page-active {
+  color: #e4572e;
+  background-color: rgba(156, 155, 160, 0.1);
 }

@@ -8,7 +8,7 @@ export function ReactPage() {
   return (
     <div className={styles.container}>
       <Cards>
-        <Card to={Routes.TenHocs}>10 good HOCS</Card>
+        <Card to={Routes.TenHocs} result={<></>} caption="10 good HOCS" />
       </Cards>
     </div>
   )
