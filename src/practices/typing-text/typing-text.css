@@ -1,0 +1,23 @@
+.text {
+  width: 16ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: typing 2s steps(16) infinite, blink linear 0.5s infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: black;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}

@@ -9,5 +9,5 @@ export function Github() {
   // @todo: open new tab
   const onClick = useCallback(() => pushHistory(GITHUB_URL), [])
 
-  return <Button onClick={onClick} left={<Image src={githubIcon} />} children="GitHub" />
+  return <Button design="ghost" size="sm" onClick={onClick} left={<Image src={githubIcon} />} children="GitHub" />
 }

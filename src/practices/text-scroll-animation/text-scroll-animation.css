@@ -1,0 +1,14 @@
+.text {
+  /* main */
+  animation: textAnimation 10s infinite linear;
+  white-space: nowrap;
+
+  /* view */
+  font-size: 36px;
+}
+
+@keyframes textAnimation {
+  to {
+    transform: translateX(-100%);
+  }
+}

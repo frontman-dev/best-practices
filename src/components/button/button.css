@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
   min-width: 110px;
-  height: 32px;
   padding: 0 12px;
   border-radius: 8px;
   font-size: 14px;
@@ -21,10 +20,35 @@
   margin-right: 8px;
 }
 
+.primary {
+  color: #fafafa;
+  background-color: #1b1a20;
+}
+
+.secondary {
+  color: #1b1a20;
+  background-color: #fafafa;
+}
+
 .ghost {
   background: transparent;
 }
 
 .ghost:hover {
   background: #1b1a2010;
+}
+
+.sm {
+  height: 32px;
+  font-size: 14px;
+}
+
+.md {
+  height: 44px;
+  font-size: 16px;
+}
+
+.lg {
+  height: 56px;
+  font-size: 18px;
 }

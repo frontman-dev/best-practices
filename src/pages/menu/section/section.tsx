@@ -5,6 +5,7 @@ import { Routes } from "~/core/routes"
 import { MarkupIcon } from "../icons/markup"
 import { ReactIcon } from "../icons/react"
 import { PerformanceIcon } from "../icons/performance"
+import { InterviewIcon } from "../icons/interview"
 
 export type SectionProps = {
   children: React.ReactNode | React.ReactNode[]
@@ -34,6 +35,9 @@ function getNameAndIconBySection(section: Routes): [string, any] {
   }
   if (section === Routes.Performance) {
     return ["Performance", PerformanceIcon]
+  }
+  if (section === Routes.Interview) {
+    return ["Interview", InterviewIcon]
   }
   return ["", null]
 }
