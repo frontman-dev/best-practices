@@ -1,9 +1,11 @@
+@import "/src/styles/common.css";
+
 .card {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(27, 26, 32, 0.3);
+  border: 1px solid var(--color-secondary);
   border-radius: 12px;
   width: 181px;
   height: 181px;
@@ -11,7 +13,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 10px 10px rgba(27, 32, 50, 0.12);
+  border-color: var(--color-accent);
 }
 
 .caption {
@@ -19,10 +21,14 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #1b1a20;
+  color: var(--color-contrast);
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   padding: 16px;
   box-sizing: border-box;
+}
+
+.card:hover .caption {
+  color: var(--color-accent);
 }

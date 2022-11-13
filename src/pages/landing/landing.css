@@ -1,3 +1,5 @@
+@import "/src/styles/common.css";
+
 .container {
 }
 
@@ -31,7 +33,7 @@
   margin-bottom: 24px;
   font-size: 36px;
   font-weight: 500;
-  color: #fafafa;
+  color: var(--color-primary);
 }
 
 .cards {
@@ -45,23 +47,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--color-white);
   cursor: pointer;
-  color: #1b1a2050;
+  color: var(--color-secondary);
   border-radius: 24px;
-  border: 4px solid #1b1a2050;
+  border: 2px solid var(--color-secondary);
 }
 
 .card:hover,
 .card:active {
-  color: #e4572e;
-  border-color: #e4572e;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .card-label {
   position: relative;
   font-size: 36px;
-  font-weight: 500;
   width: 60%;
   text-align: left;
 }
@@ -70,20 +71,19 @@
   cursor: not-allowed;
 }
 
-.card-disabled > .card-label::after {
+.card-disabled .card-label::after {
   position: absolute;
   top: 42px;
   left: 0;
   content: "Coming soon!";
-  color: #e4572e;
+  color: var(--color-accent);
   font-size: 18px;
-  font-weight: 500;
 }
 
 .card-disabled:hover,
 .card-disabled:active {
-  color: #1b1a2050;
-  border-color: #1b1a2050;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 @media (max-width: 768px) {

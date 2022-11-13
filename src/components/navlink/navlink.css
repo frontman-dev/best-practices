@@ -1,10 +1,12 @@
+@import "/src/styles/common.css";
+
 .link {
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
-  color: rgba(27, 26, 32, 0.5);
+  color: var(--color-secondary);
 }
 
 .icon {
@@ -16,7 +18,7 @@
 }
 
 .section-active {
-  color: #1b1a20;
+  color: var(--color-contrast);
 }
 
 .page {
@@ -30,6 +32,6 @@
 
 .page:hover,
 .page-active {
-  color: #e4572e;
+  color: var(--color-accent);
   background-color: rgba(156, 155, 160, 0.1);
 }

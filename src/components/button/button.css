@@ -1,3 +1,5 @@
+@import "/src/styles/common.css";
+
 .button {
   /* disable appearance */
   background: transparent;
@@ -21,13 +23,13 @@
 }
 
 .primary {
-  color: #fafafa;
-  background-color: #1b1a20;
+  color: var(--color-primary);
+  background-color: var(--color-contrast);
 }
 
 .secondary {
-  color: #1b1a20;
-  background-color: #fafafa;
+  color: var(--color-contrast);
+  background-color: var(--color-primary);
 }
 
 .ghost {
@@ -35,7 +37,7 @@
 }
 
 .ghost:hover {
-  background: #1b1a2010;
+  background: var(--color-secondary-light);
 }
 
 .sm {

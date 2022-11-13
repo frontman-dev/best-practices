@@ -24,7 +24,7 @@ const rules = [
   },
   {
     test: /\.css$/,
-    exclude: [/(node_modules)/, /\.global\.css$/, path.resolve("src/styles")],
+    exclude: [/(node_modules)/],
     use: [
       "style-loader",
       {
@@ -39,7 +39,7 @@ const rules = [
   },
   {
     test: /\.css$/,
-    include: [/(node_modules)/, /\.global\.css$/, path.resolve("src/styles")],
+    include: [/(node_modules)/],
     use: [
       "style-loader",
       {
